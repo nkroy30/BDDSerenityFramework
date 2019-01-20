@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="com.studentapp.junit.FirstSerenityTest" skipped="0" tests="1" time="66.98" timestamp="2018-12-359 07:00:50"><testcase classname="com.studentapp.junit.FirstSerenityTest" name="Get all students"><error message="net.thucydides.core.steps.StepEventBus.isBaseStepListenerRegistered()Z" type="java.lang.NoSuchMethodError">net.thucydides.core.steps.StepEventBus.isBaseStepListenerRegistered()Z</error><system-err>net.thucydides.core.steps.StepEventBus.isBaseStepListenerRegistered()Z&#13;
+net.serenitybdd.rest.decorators.request.RequestSpecificationDecorated.execute(RequestSpecificationDecorated.java:261)&#13;
+net.serenitybdd.rest.decorators.request.RequestSpecificationDecorated.get(RequestSpecificationDecorated.java:47)&#13;
+net.serenitybdd.rest.decorators.request.RequestSpecificationDecorated.get(RequestSpecificationDecorated.java:26)&#13;
+com.studentapp.junit.FirstSerenityTest.getAllStudents(FirstSerenityTest.java:27)&#13;
+</system-err></testcase></testsuite>

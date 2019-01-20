@@ -1,0 +1,6 @@
+<acceptance-test-run title="Get all students" name="getAllStudents" steps="0" successful="0" failures="0" skipped="0" ignored="0" pending="0" annotated-result="ERROR" result="ERROR" duration="66983" timestamp="2018-12-25T19:00:50.231+05:30">
+  <user-story id="com.studentapp.junit.FirstSerenityTest" name="First serenity test" path="com.studentapp.junit"/>
+  <tags>
+    <tag name="First serenity test" type="story"/>
+  </tags>
+</acceptance-test-run>
