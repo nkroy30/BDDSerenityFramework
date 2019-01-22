@@ -14,16 +14,18 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <serenity.version>1.4.1-rc.6</serenity.version>
-    <serenity.maven.version>1.4.1-rc.6</serenity.maven.version>
+    <serenity.version>2.0.31</serenity.version>
+    <!--<serenity.maven.version>2.0.29</serenity.maven.version> -->
+    <serenity.cucumber.version>1.9.16</serenity.cucumber.version>
   </properties>
+
 
   <dependencies>
 
     <dependency>
       <groupId>net.serenity-bdd</groupId>
       <artifactId>serenity-core</artifactId>
-      <version>${serenity.version}</version>
+      <version>2.0.33</version>
     </dependency>
 
     <dependency>
@@ -36,28 +38,28 @@
     <dependency>
       <groupId>net.serenity-bdd</groupId>
       <artifactId>serenity-rest-assured</artifactId>
-      <version>${serenity.version}</version>
+      <version>2.0.33</version>
     </dependency>
     <dependency>
       <groupId>net.serenity-bdd</groupId>
       <artifactId>serenity-model</artifactId>
-      <version>${serenity.version}</version>
+      <version>2.0.33</version>
     </dependency>
     <dependency>
       <groupId>net.serenity-bdd</groupId>
       <artifactId>serenity-reports</artifactId>
-      <version>${serenity.version}</version>
+      <version>2.0.29</version>
     </dependency>
       <dependency>
      <groupId>net.serenity-bdd</groupId>
       <artifactId>serenity-cucumber</artifactId>
-      <version>${serenity.cucumber.version}</version>
+      <version>1.9.23</version>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>net.serenity-bdd</groupId>
       <artifactId>serenity-junit</artifactId>
-      <version>${serenity.version}</version>
+      <version>2.0.33</version>
     </dependency>
     <dependency>
       <groupId>junit</groupId>
@@ -77,8 +79,9 @@
     <dependency>
       <groupId>net.thucydides</groupId>
       <artifactId>thucydides-core</artifactId>
-      <version>${thucydides.version}</version>
+      <version>0.9.275</version>
     </dependency>
+
     <dependency>
       <groupId>org.hamcrest</groupId>
       <artifactId>hamcrest-all</artifactId>
@@ -108,12 +111,16 @@
         </includes>
         <reuseForks>true</reuseForks>
       </configuration>
-      <execution>
-        <goals>
-          <goal>integration-test</goal>
-          <goal>test</goal>
-        </goals>
-      </execution>
+      <executions>
+        <execution>
+          <goals>
+            <goal>integration-test</goal>
+            <goal>verify</goal>
+          </goals>
+        </execution>
+
+      </executions>
+
     </plugin>
     <plugin>
       <groupId>org.apache.maven.plugins</groupId>
@@ -135,17 +142,18 @@
        <!--  <parallel>methods</parallel>-->
         <!--  <threadCount></threadCount>-->
        </configuration>
+
      </plugin>
 
      <plugin>
        <groupId>net.serenity-bdd.maven.plugins</groupId>
        <artifactId>serenity-maven-plugin</artifactId>
-       <version>${serenity.maven.version}</version>
+       <version>2.0.24</version>
        <dependencies>
          <dependency>
            <groupId>net.serenity-bdd</groupId>
-           <artifactId>core</artifactId>
-           <version>${serenity.version}</version>
+           <artifactId>serenity-core</artifactId>
+           <version>2.0.21</version>
          </dependency>
        </dependencies>
        <executions>
